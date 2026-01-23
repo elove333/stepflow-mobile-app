@@ -1,0 +1,38 @@
+{
+  "name": "StepFlow",
+  "displayName": "StepFlow",
+  "description": "AI-powered rhythm training app with motion tracking",
+  "expo": {
+    "name": "StepFlow",
+    "slug": "stepflow-mobile-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stepflow.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.stepflow.mobile"
+    },
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    }
+  }
+}

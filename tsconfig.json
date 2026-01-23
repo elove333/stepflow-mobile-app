@@ -1,0 +1,33 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2017"],
+    "jsx": "react-native",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/core/*": ["src/core/*"],
+      "@/screens/*": ["src/screens/*"],
+      "@/components/*": ["src/components/*"],
+      "@/tracking/*": ["src/tracking/*"],
+      "@/api/*": ["src/api/*"],
+      "@/state/*": ["src/state/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/config/*": ["src/config/*"]
+    }
+  },
+  "include": ["src/**/*", "index.js", "App.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
