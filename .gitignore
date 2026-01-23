@@ -64,7 +64,6 @@ android/build/
 *.dex
 local.properties
 .gradle/
-.idea/
 
 # Temporary files
 tmp/
