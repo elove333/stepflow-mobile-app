@@ -1,11 +1,25 @@
 import {post} from './ApiClient';
 
+export interface MotionDataPoint {
+  timestamp: number;
+  accelerometer: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  gyroscope: {
+    x: number;
+    y: number;
+    z: number;
+  };
+}
+
 export interface SessionData {
   id: string;
   startTime: number;
   endTime: number;
   duration: number;
-  motionData: any[];
+  motionData: MotionDataPoint[];
   metrics: {
     averageAccuracy: number;
     timingScore: number;
