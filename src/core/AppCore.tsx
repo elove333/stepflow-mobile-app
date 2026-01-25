@@ -10,7 +10,9 @@ import {initializeApp} from './AppInitializer';
 const AppCore: React.FC = () => {
   useEffect(() => {
     // Initialize app services
-    initializeApp();
+    initializeApp().catch((error) => {
+      console.error('Failed to initialize app', error);
+    });
   }, []);
 
   return (
