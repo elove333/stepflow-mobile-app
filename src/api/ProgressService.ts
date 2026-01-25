@@ -1,10 +1,18 @@
 import {get} from './ApiClient';
 
+export interface WeeklyStatItem {
+  weekStart: string;
+  weekEnd: string;
+  sessions: number;
+  averageScore: number;
+  improvementRate: number;
+}
+
 export interface ProgressData {
   totalSessions: number;
   averageScore: number;
   improvementRate: number;
-  weeklyStats: any[];
+  weeklyStats: WeeklyStatItem[];
 }
 
 export interface FeedbackItem {
