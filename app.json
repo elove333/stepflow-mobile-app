@@ -32,7 +32,7 @@
       "package": "com.stepflow.mobile"
     },
     "web": {
-      "favicon": "./src/assets/images/favicon.png"
     }
+  }
   }
 }
