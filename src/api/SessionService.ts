@@ -40,15 +40,8 @@ export const sendSessionData = async (
     return response;
   } catch (error) {
     console.error('Error sending session data:', error);
-    // Return mock response for development
-    return {
-      success: true,
-      sessionId: sessionData.id,
-      feedback: {
-        score: 75,
-        message: 'Good rhythm! Focus on consistent timing in the next session.',
-      },
-    };
+    // Let the error propagate so callers can handle the failure appropriately
+    throw error;
   }
 };
 
