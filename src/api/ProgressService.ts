@@ -1,4 +1,3 @@
-import {get} from './ApiClient';
 
 export interface WeeklyStatItem {
   weekStart: string;
